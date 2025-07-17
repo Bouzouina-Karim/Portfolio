@@ -13,15 +13,16 @@
             box-sizing: border-box;      
         }
         body {
-            background-color: #31272C;
+            background-color: #f8f9fa;
             font-family: sans-serif;
             line-height: 1.6;
+            color: #333;
         }
         
         /* Navbar */
         #navbar {
-            background-color: rgba(10, 10, 10, 0.95);
-            color: aliceblue;
+            background-color: rgba(255, 255, 255, 0.98);
+            color: #333;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -30,8 +31,9 @@
             left: 0;
             width: 100%;
             padding: 15px 20px;
-            border-bottom: 0.5px solid #3a3939;
+            border-bottom: 1px solid #e0e0e0;
             z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         #nav-menu {
@@ -42,7 +44,7 @@
         .menu-item {
             padding: 8px 12px;
             border-radius: 4px;
-            color: rgb(181, 173, 173);
+            color: #555;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
@@ -50,12 +52,13 @@
         } 
         
         .menu-item:hover {
-            color: aliceblue;
+            color: #d32f2f;
         }
         
         #logo-text {
             font-size: 1.5rem;
             font-weight: 700;
+            color: #d32f2f;
         }
         
         /* Mobile menu toggle */
@@ -63,14 +66,14 @@
             display: none;
             background: none;
             border: none;
-            color: white;
+            color: #333;
             font-size: 1.5rem;
             cursor: pointer;
         }
         
         /* Hero Section */
         #hero {
-            background: #31272C;
+            background: #f8f9fa;
             width: 100%;
             min-height: 80vh;
             margin-top: 70px;
@@ -90,41 +93,43 @@
         #hero-title {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: aliceblue;
+            color: #333;
         }
         
         #hero-skill {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #7e36ab;
+            color: #d32f2f;
         }
         
         #hero-introduction {
             margin-bottom: 30px;
-            color: #c2b0b0;
+            color: #666;
             font-weight: 300;
         }
         
         #img-holder {
-            background: radial-gradient(circle at center, lightgrey,white);
+            background: radial-gradient(circle at center, #f0f0f0, #ffffff);
             width: 250px;
             height: 250px;
             border-radius: 50%;
-            border: 7px solid #3a3939;
+            border: 7px solid #e0e0e0;
             transition: transform 0.45s;
             margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         
         #img-holder:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.2);
         }
         
         /* Skills Section */
         #skills {
-            background: #151414;
+            background: #f8f9fa;
             width: 100%;
             padding: 60px 20px;
-            color: rgb(255, 255, 255);
+            color: #333;
             text-align: center;
         }
         
@@ -152,25 +157,27 @@
             justify-content: center;
             align-items: center;
             gap: 8px;
-            background-color: #31272C;
+            background-color: #ffffff;
             padding: 12px 15px;
             border-radius: 10px;
-            border: 1px solid #3a3939;
+            border: 1px solid #e0e0e0;
             transition: all 0.4s;
-            color: #c2b0b0;
+            color: #666;
             width: 100%;
             max-width: 150px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         
         .skill-wrapper {
             width: 100%;
             max-width: 350px;
             text-align: left;
-            background-color: #2a2125;
+            background-color: #ffffff;
             border-radius: 30px;
             padding: 20px;
-            color: #7e36ab;
-            border: 1px solid #3a3939;
+            color: #d32f2f;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         .skill-wrapper h2 {
@@ -180,22 +187,24 @@
         }
         
         #icons {
-            color: #51a6df;
+            color: #d32f2f;
         }
         
         #skill-bar:hover {
             transform: scale(1.05);
-            background-color: #382f34;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
+            color: #d32f2f;
         }
         
         #skills h1 {
-            color: #51a6df;
+            color: #d32f2f;
             margin-bottom: 15px;
             font-size: 2.5rem;
         }
         
         #skills h3 {
-            color: rgb(255, 255, 255);
+            color: #333;
             margin-bottom: 30px;
             font-size: 1.2rem;
             font-weight: 500;
@@ -203,7 +212,7 @@
         
         /* Projects Section */
         #projects-section {
-            background-color: #31272C;
+            background-color: #f8f9fa;
             padding: 60px 20px;
         }
         
@@ -219,17 +228,17 @@
             width: 100%;
             height: auto;
             margin-top: 20px;
-            background-color: #2a2125;
+            background-color: #ffffff;
             border-radius: 20px;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            border: 1px solid #3a3939;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
             transition: all 0.3s ease;
         }
         
         .project-card:hover {
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 20px rgba(211, 47, 47, 0.2);
             transform: translateY(-5px);
         }
         
@@ -251,17 +260,17 @@
         }
         
         .project-card h2 {
-            color: rgb(37, 118, 223);
+            color: #d32f2f;
             margin-bottom: 10px;
         }
         
         .project-card p {
-            color: white;
+            color: #666;
         }
         
         /* Testimonials Section */
         #testimonials {
-            background-color: #151414;
+            background-color: #f8f9fa;
             padding: 60px 20px;
         }
         
@@ -269,11 +278,12 @@
             max-width: 500px;
             margin: 0 auto;
             padding: 30px;
-            background-color: rgb(33, 32, 32);
+            background-color: #ffffff;
             border-radius: 30px;
-            border: solid 1px rgb(98, 96, 96);
+            border: solid 1px #e0e0e0;
             transition: all 0.5s;
-            color: #f0e6f6;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         #name, #email {
@@ -281,11 +291,11 @@
             height: 50px;
             border-radius: 15px;
             margin-bottom: 20px;
-            border: solid 1px rgb(98, 96, 96);
-            background-color: #323131;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border: solid 1px #e0e0e0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.6s;
-            color: #f0e6f6;
+            color: #333;
             padding: 0 15px;
             font-size: 1rem;
         }
@@ -294,11 +304,11 @@
             width: 100%;
             height: 150px;
             border-radius: 15px;
-            border: solid 1px rgb(98, 96, 96);
-            background-color: #323131;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border: solid 1px #e0e0e0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.6s;
-            color: #a8a8a8;
+            color: #666;
             padding: 15px;
             font-size: 1rem;
             margin-bottom: 20px;
@@ -307,7 +317,7 @@
         #name::placeholder,
         #email::placeholder,
         #comment::placeholder {
-            color: #a8a8a8;
+            color: #999;
             font-size: 1rem;
         }
         
@@ -315,12 +325,12 @@
             width: 100%;
             max-width: 130px;
             height: 50px;
-            background-color: rgb(71, 38, 125);
+            background-color: #d32f2f;
             border-radius: 8px;
             font-family: sans-serif;
-            color: aliceblue;
+            color: white;
             font-size: 1.1rem;
-            border: solid 1px rgb(98, 96, 96);
+            border: solid 1px #c62828;
             transition: all 0.6s;
             cursor: pointer;
             margin: 0 auto;
@@ -328,8 +338,8 @@
         }
         
         #submit:hover {
-            background-color: rgb(87, 58, 132);
-            box-shadow: 0 8px 15px rgba(88, 62, 137, 0.3);
+            background-color: #b71c1c;
+            box-shadow: 0 8px 15px rgba(211, 47, 47, 0.3);
             transform: translateY(-2px);
         }
         
@@ -340,15 +350,15 @@
         #email:focus,
         #comment:focus {
             outline: none;
-            border-color: #7e36ab;
-            box-shadow: 0 0 10px rgba(126, 54, 171, 0.6);
-            background-color: #3b343b;
-            color: #f0e6f6;
+            border-color: #d32f2f;
+            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            background-color: #ffffff;
+            color: #333;
         }
         
         /* Contact Section */
         #contact {
-            background-color: #31272C;
+            background-color: #f8f9fa;
             padding: 60px 20px;
         }
         
@@ -372,27 +382,28 @@
             max-width: 250px;
             height: 60px;
             display: flex;
-            background-color: #252327;
+            background-color: #ffffff;
             padding: 10px 20px;
             border-radius: 20px;
             text-align: center;
             font-family: sans-serif;
-            border: 0.5px solid rgb(50, 50, 50);
+            border: 1px solid #e0e0e0;
             justify-content: center;
             align-items: center;
             gap: 15px;
             transition: all 0.6s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         
         #contact-form {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            background-color: #252327;
+            background-color: #ffffff;
             border-radius: 40px;
-            border: 1px solid rgb(58, 58, 58);
+            border: 1px solid #e0e0e0;
             padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         #contact-info {
@@ -406,51 +417,51 @@
             flex: 1;
             min-width: 200px;
             height: 50px;
-            background-color: #323131;
+            background-color: #ffffff;
             border-radius: 10px;
-            border: 0.5px solid rgba(88, 62, 137, 0.3);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.6s;
             padding: 0 15px;
-            color: white;
+            color: #333;
         }
         
         #subject-contact {
             width: 100%;
             height: 70px;
-            background-color: #323131;
+            background-color: #ffffff;
             border-radius: 10px;
-            border: 0.5px solid rgba(88, 62, 137, 0.3);
+            border: 1px solid #e0e0e0;
             margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.6s;
             padding: 15px;
-            color: white;
+            color: #333;
         }
         
         #comment-contact {
             width: 100%;
             height: 150px;
-            background-color: #323131;
+            background-color: #ffffff;
             border-radius: 10px;
-            border: 0.5px solid rgba(88, 62, 137, 0.3);
+            border: 1px solid #e0e0e0;
             margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.6s;
             padding: 15px;
-            color: white;
+            color: #333;
         }
         
         #submit-contact {
             width: 100%;
             max-width: 130px;
             height: 50px;
-            background-color: rgb(71, 38, 125);
+            background-color: #d32f2f;
             border-radius: 8px;
             font-family: sans-serif;
-            color: aliceblue;
+            color: white;
             font-size: 1.1rem;
-            border: solid 1px rgb(98, 96, 96);
+            border: solid 1px #c62828;
             transition: all 0.6s;
             cursor: pointer;
             margin: 0 auto;
@@ -458,8 +469,8 @@
         }
         
         #submit-contact:hover {
-            background-color: rgb(87, 58, 132);
-            box-shadow: 0 8px 15px rgba(88, 62, 137, 0.3);
+            background-color: #b71c1c;
+            box-shadow: 0 8px 15px rgba(211, 47, 47, 0.3);
             transform: translateY(-2px);
         }
         
@@ -468,42 +479,43 @@
         #name-contact:focus, #email-contact:focus,
         #subject-contact:focus, #comment-contact:focus {
             outline: none;
-            border-color: #7e36ab;
-            box-shadow: 0 0 10px rgba(126, 54, 171, 0.6);
-            background-color: #3b343b;
-            color: #f0e6f6;
+            border-color: #d32f2f;
+            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            background-color: #ffffff;
+            color: #333;
         }
         
         #email-contact-socials:hover, #linkedin:hover, 
         #github:hover, #shopify:hover {
             outline: none;
-            border-color: #7e36ab;
-            box-shadow: 0 0 10px rgba(126, 54, 171, 0.6);
-            background-color: #3b343b;
-            color: #f0e6f6;
+            border-color: #d32f2f;
+            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            background-color: #ffffff;
+            color: #d32f2f;
         }
         
         #links a {
             text-decoration: none;
-            color: #c2b0b0;
+            color: #666;
             font-weight: 600;
             font-size: 1rem;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
         }
         
         #links a:hover {
-            color: #ffffff;
+            color: #d32f2f;
         }
         
         /* Footer */
         #footer {
-            background-color: #151414;
+            background-color: #f8f9fa;
             padding: 30px 20px;
             text-align: center;
+            border-top: 1px solid #e0e0e0;
         }
         
         #footer h1 {
-            color: white;
+            color: #666;
             font-size: 1.1rem;
             font-weight: 400;
         }
@@ -570,10 +582,11 @@
                 top: 70px;
                 left: 0;
                 width: 100%;
-                background-color: rgba(10, 10, 10, 0.95);
+                background-color: rgba(255, 255, 255, 0.98);
                 flex-direction: column;
                 padding: 20px;
-                border-bottom: 0.5px solid #3a3939;
+                border-bottom: 1px solid #e0e0e0;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             }
             
             #nav-menu.active {
@@ -659,11 +672,11 @@
                     <div id="skill-bar"><i id="icons" class="fab fa-python fa-2x"></i>Python</div>
                     <div id="skill-bar"><i id="icons" class="fab fa-node-js fa-2x"></i>NodeJS</div>
                     <div id="skill-bar">
-                        <span class="iconify mongodb-icon" data-icon="simple-icons:mongodb" data-width="24" style="color: #51a6df;"></span>
+                        <span class="iconify mongodb-icon" data-icon="simple-icons:mongodb" data-width="24" style="color: #d32f2f;"></span>
                         MongoDB
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:express" data-width="24" style="color: #51a6df;"></span>
+                        <span class="iconify" data-icon="simple-icons:express" data-width="24" style="color: #d32f2f;"></span>
                         Express.js
                     </div>
                 </div>
@@ -672,15 +685,15 @@
                 <h2>Design</h2>
                 <div class="skill-grid">
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:figma" data-width="24" style="color: #51a6df;"></span>
+                        <span class="iconify" data-icon="simple-icons:figma" data-width="24" style="color: #d32f2f;"></span>
                         Figma
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:wordpress" data-width="24" style="color: #51a6df;"></span>
+                        <span class="iconify" data-icon="simple-icons:wordpress" data-width="24" style="color: #d32f2f;"></span>
                         WordPress
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:adobeillustrator" data-width="24" style="color: #51a6df;"></span>
+                        <span class="iconify" data-icon="simple-icons:adobeillustrator" data-width="24" style="color: #d32f2f;"></span>
                         Illustrator
                     </div>
                 </div>
@@ -693,7 +706,7 @@
         <div id="projects-container">
             <div class="project-card">
                 <div class="img-wrapper">
-                    <img src="images/karim.png" alt="Project Preview">
+                    <img src="public/images/karim.png" alt="Project Preview">
                 </div>
                 <div class="project-content">
                     <h2>Portfolio</h2>
@@ -718,19 +731,19 @@
         <div id="contact-container">
             <div id="links">
                 <div id="github">
-                    <span class="iconify" data-icon="simple-icons:github" data-width="24" style="color: #51a6df;"></span>
+                    <span class="iconify" data-icon="simple-icons:github" data-width="24" style="color: #d32f2f;"></span>
                     <a href="https://github.com/Bouzouina-Karim">GitHub</a>
                 </div>
                 <div id="linkedin">
-                    <span class="iconify" data-icon="simple-icons:linkedin" data-width="24" style="color: #51a6df;"></span>
+                    <span class="iconify" data-icon="simple-icons:linkedin" data-width="24" style="color: #d32f2f;"></span>
                     <a href="https://www.linkedin.com/in/abdelkrim-abdelkrim-88b947293">LinkedIn</a>
                 </div>
                 <div id="shopify">
-                    <span class="iconify" data-icon="simple-icons:shopify" data-width="24" style="color: #51a6df;"></span>
+                    <span class="iconify" data-icon="simple-icons:shopify" data-width="24" style="color: #d32f2f;"></span>
                     <a href="https://accounts.shopify.com/accounts/302949422/personal">Shopify</a>
                 </div>
                 <div id="email-contact-socials">
-                    <span class="iconify" data-icon="mdi:email-outline" data-width="24" style="color: #51a6df;"></span>
+                    <span class="iconify" data-icon="mdi:email-outline" data-width="24" style="color: #d32f2f;"></span>
                     <a href="mailto:your-email@example.com">Email</a>
                 </div>
             </div>
