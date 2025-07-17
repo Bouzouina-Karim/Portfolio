@@ -19,6 +19,15 @@
             color: #333;
         }
         
+        /* Color Variables */
+        :root {
+            --primary-purple: #6a1b9a;
+            --dark-purple: #4a148c;
+            --primary-blue: #1976d2;
+            --dark-blue: #1565c0;
+            --light-blue: #bbdefb;
+        }
+        
         /* Navbar */
         #navbar {
             background-color: rgba(255, 255, 255, 0.98);
@@ -52,13 +61,13 @@
         } 
         
         .menu-item:hover {
-            color: #d32f2f;
+            color: var(--primary-purple);
         }
         
         #logo-text {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #d32f2f;
+            color: var(--primary-purple);
         }
         
         /* Mobile menu toggle */
@@ -99,7 +108,7 @@
         #hero-skill {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #d32f2f;
+            color: var(--primary-blue);
         }
         
         #hero-introduction {
@@ -109,7 +118,7 @@
         }
         
         #img-holder {
-            background: radial-gradient(circle at center, #f0f0f0, #ffffff);
+            background: radial-gradient(circle at center, #e3f2fd, #ffffff);
             width: 250px;
             height: 250px;
             border-radius: 50%;
@@ -121,7 +130,7 @@
         
         #img-holder:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.2);
+            box-shadow: 0 6px 20px rgba(25, 118, 210, 0.2);
         }
         
         /* Skills Section */
@@ -175,7 +184,7 @@
             background-color: #ffffff;
             border-radius: 30px;
             padding: 20px;
-            color: #d32f2f;
+            color: var(--primary-purple);
             border: 1px solid #e0e0e0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -187,18 +196,18 @@
         }
         
         #icons {
-            color: #d32f2f;
+            color: var(--primary-blue);
         }
         
         #skill-bar:hover {
             transform: scale(1.05);
             background-color: #fff;
-            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
-            color: #d32f2f;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+            color: var(--primary-blue);
         }
         
         #skills h1 {
-            color: #d32f2f;
+            color: var(--primary-purple);
             margin-bottom: 15px;
             font-size: 2.5rem;
         }
@@ -238,7 +247,7 @@
         }
         
         .project-card:hover {
-            box-shadow: 0 8px 20px rgba(211, 47, 47, 0.2);
+            box-shadow: 0 8px 20px rgba(25, 118, 210, 0.2);
             transform: translateY(-5px);
         }
         
@@ -260,7 +269,7 @@
         }
         
         .project-card h2 {
-            color: #d32f2f;
+            color: var(--primary-blue);
             margin-bottom: 10px;
         }
         
@@ -325,12 +334,12 @@
             width: 100%;
             max-width: 130px;
             height: 50px;
-            background-color: #d32f2f;
+            background-color: var(--primary-purple);
             border-radius: 8px;
             font-family: sans-serif;
             color: white;
             font-size: 1.1rem;
-            border: solid 1px #c62828;
+            border: solid 1px var(--dark-purple);
             transition: all 0.6s;
             cursor: pointer;
             margin: 0 auto;
@@ -338,8 +347,8 @@
         }
         
         #submit:hover {
-            background-color: #b71c1c;
-            box-shadow: 0 8px 15px rgba(211, 47, 47, 0.3);
+            background-color: var(--dark-purple);
+            box-shadow: 0 8px 15px rgba(106, 27, 154, 0.3);
             transform: translateY(-2px);
         }
         
@@ -350,8 +359,8 @@
         #email:focus,
         #comment:focus {
             outline: none;
-            border-color: #d32f2f;
-            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 10px rgba(25, 118, 210, 0.2);
             background-color: #ffffff;
             color: #333;
         }
@@ -456,12 +465,12 @@
             width: 100%;
             max-width: 130px;
             height: 50px;
-            background-color: #d32f2f;
+            background-color: var(--primary-purple);
             border-radius: 8px;
             font-family: sans-serif;
             color: white;
             font-size: 1.1rem;
-            border: solid 1px #c62828;
+            border: solid 1px var(--dark-purple);
             transition: all 0.6s;
             cursor: pointer;
             margin: 0 auto;
@@ -469,8 +478,8 @@
         }
         
         #submit-contact:hover {
-            background-color: #b71c1c;
-            box-shadow: 0 8px 15px rgba(211, 47, 47, 0.3);
+            background-color: var(--dark-purple);
+            box-shadow: 0 8px 15px rgba(106, 27, 154, 0.3);
             transform: translateY(-2px);
         }
         
@@ -479,8 +488,8 @@
         #name-contact:focus, #email-contact:focus,
         #subject-contact:focus, #comment-contact:focus {
             outline: none;
-            border-color: #d32f2f;
-            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 10px rgba(25, 118, 210, 0.2);
             background-color: #ffffff;
             color: #333;
         }
@@ -488,10 +497,10 @@
         #email-contact-socials:hover, #linkedin:hover, 
         #github:hover, #shopify:hover {
             outline: none;
-            border-color: #d32f2f;
-            box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 10px rgba(25, 118, 210, 0.2);
             background-color: #ffffff;
-            color: #d32f2f;
+            color: var(--primary-blue);
         }
         
         #links a {
@@ -503,7 +512,7 @@
         }
         
         #links a:hover {
-            color: #d32f2f;
+            color: var(--primary-purple);
         }
         
         /* Footer */
@@ -672,11 +681,11 @@
                     <div id="skill-bar"><i id="icons" class="fab fa-python fa-2x"></i>Python</div>
                     <div id="skill-bar"><i id="icons" class="fab fa-node-js fa-2x"></i>NodeJS</div>
                     <div id="skill-bar">
-                        <span class="iconify mongodb-icon" data-icon="simple-icons:mongodb" data-width="24" style="color: #d32f2f;"></span>
+                        <span class="iconify mongodb-icon" data-icon="simple-icons:mongodb" data-width="24" style="color: #1976d2;"></span>
                         MongoDB
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:express" data-width="24" style="color: #d32f2f;"></span>
+                        <span class="iconify" data-icon="simple-icons:express" data-width="24" style="color: #1976d2;"></span>
                         Express.js
                     </div>
                 </div>
@@ -685,15 +694,15 @@
                 <h2>Design</h2>
                 <div class="skill-grid">
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:figma" data-width="24" style="color: #d32f2f;"></span>
+                        <span class="iconify" data-icon="simple-icons:figma" data-width="24" style="color: #1976d2;"></span>
                         Figma
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:wordpress" data-width="24" style="color: #d32f2f;"></span>
+                        <span class="iconify" data-icon="simple-icons:wordpress" data-width="24" style="color: #1976d2;"></span>
                         WordPress
                     </div>
                     <div id="skill-bar">
-                        <span class="iconify" data-icon="simple-icons:adobeillustrator" data-width="24" style="color: #d32f2f;"></span>
+                        <span class="iconify" data-icon="simple-icons:adobeillustrator" data-width="24" style="color: #1976d2;"></span>
                         Illustrator
                     </div>
                 </div>
@@ -731,19 +740,19 @@
         <div id="contact-container">
             <div id="links">
                 <div id="github">
-                    <span class="iconify" data-icon="simple-icons:github" data-width="24" style="color: #d32f2f;"></span>
+                    <span class="iconify" data-icon="simple-icons:github" data-width="24" style="color: #1976d2;"></span>
                     <a href="https://github.com/Bouzouina-Karim">GitHub</a>
                 </div>
                 <div id="linkedin">
-                    <span class="iconify" data-icon="simple-icons:linkedin" data-width="24" style="color: #d32f2f;"></span>
+                    <span class="iconify" data-icon="simple-icons:linkedin" data-width="24" style="color: #1976d2;"></span>
                     <a href="https://www.linkedin.com/in/abdelkrim-abdelkrim-88b947293">LinkedIn</a>
                 </div>
                 <div id="shopify">
-                    <span class="iconify" data-icon="simple-icons:shopify" data-width="24" style="color: #d32f2f;"></span>
+                    <span class="iconify" data-icon="simple-icons:shopify" data-width="24" style="color: #1976d2;"></span>
                     <a href="https://accounts.shopify.com/accounts/302949422/personal">Shopify</a>
                 </div>
                 <div id="email-contact-socials">
-                    <span class="iconify" data-icon="mdi:email-outline" data-width="24" style="color: #d32f2f;"></span>
+                    <span class="iconify" data-icon="mdi:email-outline" data-width="24" style="color: #1976d2;"></span>
                     <a href="mailto:your-email@example.com">Email</a>
                 </div>
             </div>
